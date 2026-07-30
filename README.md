@@ -1,104 +1,295 @@
-<div align="center">
+# 📚 Library Management System
 
-  <h1>📚 Library Management System 📚</h1>
+A **Python-based Command-Line Library Management System** designed to efficiently manage university library resources.
 
-  <p>A Python-based Command-Line Library Management System developed using Object-Oriented Programming (OOP) principles.
-
-The system allows a university library to manage different types of educational resources, including Books, Magazines, Educational DVDs, and Lecture CDs. Users can add, remove, search, lend, return, and monitor the availability of resources through a simple command-line interface.</p>
-
-  <div>
-    <img src="https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-    <img src="https://img.shields.io/badge/-OOP-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="OOP" />
-  </div>
-
-</div>
+**Python | OOP | CLI Application**
 
 ---
 
+## 📋 Table of Contents
 
-# Table of Contents
+* [Overview](#overview)
+* [Library Resources](#library-resources)
+* [Features](#features)
+* [Project Structure](#project-structure)
+* [Technologies Used](#technologies-used)
+* [How to Run](#how-to-run)
+* [Usage](#usage)
+* [OOP Concepts](#oop-concepts)
+* [Future Improvements](#future-improvements)
+* [Author](#author)
+* [License](#license)
 
-1. [Overview](#overview)  
-2. [Library Resources](#library-resources)  
-3. [Features](#features)  
-4. [Usage](#usage)  
-5. [Technologies Used](#technologies-used)  
-6. [Future Improvements](#future-improvements)  
-7. [Author](#author)   
+---
 
-## Overview
+## 📖 Overview
 
-This project is a command-line Python application designed to manage resources in a university library.
+The **Library Management System** is a command-line Python application developed to manage resources in a university library.
 
 The system supports four types of resources:
 
-📖 Books
-📰 Magazines
-💿 Educational DVDs
-💿 Lecture CDs
+* 📚 Books
+* 📰 Magazines
+* 💿 Educational DVDs
+* 💿 Lecture CDs
 
-The application allows library staff to add, remove, view, search, lend, and return resources while tracking the number of available copies.
+The application allows users to **add, remove, view, search, lend, and return resources** while automatically tracking the number of available copies.
 
-The project is developed using Object-Oriented Programming (OOP) concepts such as inheritance, abstraction, encapsulation, and polymorphism.
-
----
-
-## Library Resources
-
-Resource Type	Attributes	Example	Available Subjects / Formats
-📖 Book	ISBN, title, format, subject, rental price per day, number of copies	[ISBN1234, The Solar System, Hardcover, Science, 15.00, 5]	Formats: Hardcover, Paperback
-Subjects: Science, History, Literature
-📰 Magazine	Magazine number, title, print type, subject, rental price per day, number of copies	[01, History of Cricket, Color, Sports, 5.00, 7]	Subjects: Science, Technology, Sports
-💿 Educational DVD	DVD number, title, subject, rental price per day, number of copies	[10, Birth of the Solar System, Astronomy, 2.50, 10]	Subjects: Astronomy, Math, Technology
-💿 Lecture CD	CD number, title, subject, rental price per day, number of copies	[21, Basics of Western Music, Music, 1.50, 11]	Subjects: Music, Math, Foreign Languages
----
-
-## Features
-
-- **Add a new resource** to the system.
-- **Remove an existing resource** from the system.
-- **View available resources** by resource type.
-- **View unavailable resources** by resource type.
-- **Filter and view all resources** by subject across all types.
-- **Lend a resource** to students.
-- **Update resources** when returned.
+This project was developed using **Object-Oriented Programming (OOP)** principles to create a structured, reusable, and maintainable application.
 
 ---
 
-## Usage
+## 📚 Library Resources
 
-The program runs entirely in the command line with simple prompts to perform actions such as adding, lending, or viewing resources.
-
----
-
-## Technologies Used
-
-- Python 3.x
-- Object-oriented programming principles
+| Resource Type          | Main Attributes                                                       | Available Subjects / Formats                                            |
+| ---------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| 📖 **Book**            | ISBN, title, format, subject, rental price/day, copies                | Formats: Hardcover, Paperback<br>Subjects: Science, History, Literature |
+| 📰 **Magazine**        | Magazine number, title, print type, subject, rental price/day, copies | Subjects: Science, Technology, Sports                                   |
+| 💿 **Educational DVD** | DVD number, title, subject, rental price/day, copies                  | Subjects: Astronomy, Math, Technology                                   |
+| 💿 **Lecture CD**      | CD number, title, subject, rental price/day, copies                   | Subjects: Music, Math, Foreign Languages                                |
 
 ---
 
-## Future Improvements
+## ✨ Features
 
-- Implement a GUI interface for improved usability.
-- Add student user accounts with borrowing history.
-- Support for reservations and overdue fines.
-
----
-
-## Author
-
- **Name:** Dulanjalee Gamage  
- **Role:** Software Engineering Undergraduate  
- **GitHub:** [@dulaagamage](https://github.com/dulaagamage)  
- **LinkedIn:** [Dulanjalee Gamage](https://www.linkedin.com/in/dulanjalee-gamage-01a7aa207/)  
- **Email:** dulaagamage123@gmail.com  
+* ➕ Add a new resource
+* 🗑️ Remove an existing resource
+* 📚 View available resources
+* ❌ View unavailable resources
+* 🔎 Search resources by subject
+* 📤 Lend resources to students
+* 📥 Return borrowed resources
+* 📊 Automatically update available copy counts
+* 📋 View all library resources
+* 🖥️ Interactive command-line menu
 
 ---
 
-## License
+## 📂 Project Structure
 
-This project was created as part of academic coursework.  
-Licensed under the [MIT License](LICENSE).  
+```text
+LibraryManagementSystem/
+│
+├── main.py
+├── library.py
+├── resources.py
+├── README.md
+└── LICENSE
+```
 
-You are free to use and modify this project for educational and non-commercial purposes, with attribution to the original author.
+### `main.py`
+
+Contains the main application, command-line menu, user input handling, and program execution.
+
+### `library.py`
+
+Contains the `Library` class responsible for managing resources, including:
+
+* Adding resources
+* Removing resources
+* Searching resources
+* Lending resources
+* Returning resources
+* Viewing resources
+
+### `resources.py`
+
+Contains the resource class hierarchy:
+
+```text
+Resource
+│
+├── Book
+├── Magazine
+├── EducationalDVD
+└── LectureCD
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **Object-Oriented Programming (OOP)**
+* **Abstract Base Classes**
+* **Python Lists**
+* **Command-Line Interface (CLI)**
+
+No external Python packages are required.
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/library-management-system.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd library-management-system
+```
+
+### 3. Run the application
+
+```bash
+python main.py
+```
+
+---
+
+## 💻 Usage
+
+After running the application, the following menu will be displayed:
+
+```text
+=============================================
+       UNIVERSITY LIBRARY SYSTEM
+=============================================
+
+1. Add New Resource
+2. Remove Resource
+3. View Available Resources
+4. View Unavailable Resources
+5. Search Resources by Subject
+6. Lend Resource
+7. Return Resource
+8. View All Resources
+9. Exit
+
+=============================================
+
+Enter your choice:
+```
+
+### 📤 Lending a Resource
+
+Enter the resource number or ISBN.
+
+Example:
+
+```text
+========== LEND RESOURCE ==========
+
+Enter resource number / ISBN: ISBN1234
+
+Resource 'The Solar System' has been lent successfully.
+Remaining copies: 4
+```
+
+The system automatically decreases the available copy count.
+
+### 📥 Returning a Resource
+
+Enter the resource number or ISBN.
+
+Example:
+
+```text
+========== RETURN RESOURCE ==========
+
+Enter resource number / ISBN: ISBN1234
+
+Resource 'The Solar System' has been returned successfully.
+Available copies: 5
+```
+
+The system automatically increases the available copy count.
+
+### ❌ Unavailable Resources
+
+When the number of available copies reaches `0`, the resource is automatically considered unavailable.
+
+```text
+Copies: 0
+Status: Unavailable
+```
+
+---
+
+## 🧱 OOP Concepts
+
+This project demonstrates the following Object-Oriented Programming concepts.
+
+### Abstraction
+
+The `Resource` class is implemented as an abstract base class and defines common functionality for all resources.
+
+### Inheritance
+
+The resource classes inherit from the common `Resource` class:
+
+```text
+Resource
+   │
+   ├── Book
+   ├── Magazine
+   ├── EducationalDVD
+   └── LectureCD
+```
+
+### Encapsulation
+
+Resource attributes and related operations are grouped within their respective classes.
+
+### Polymorphism
+
+Each resource class implements its own `display()` method, allowing different resource types to be handled through a common interface.
+
+---
+
+## 🎯 Learning Objectives
+
+Through this project, I practiced:
+
+* Python programming
+* Object-Oriented Programming
+* Class and object design
+* Inheritance
+* Abstraction
+* Encapsulation
+* Polymorphism
+* Data management using lists
+* Input validation
+* CLI application development
+* Modular programming
+
+---
+
+## 🔮 Future Improvements
+
+* 🌐 Develop a web-based version
+* 🖥️ Add a graphical user interface
+* 👤 Add student account management
+* 🔐 Implement authentication and user roles
+* 📚 Add student borrowing history
+* 📅 Add borrowing due dates
+* 💰 Implement overdue fine calculation
+* 📌 Add resource reservation functionality
+* 💾 Add SQLite or MySQL database support
+* 🧪 Add unit and integration testing
+
+---
+
+## 👨‍💻 Author
+
+**Bhagya Premathilake**
+
+Software Engineering Undergraduate
+
+* GitHub: `YOUR-GITHUB-USERNAME`
+* LinkedIn: `YOUR-LINKEDIN-USERNAME`
+* Email: `YOUR-EMAIL@example.com`
+
+---
+
+## 📄 License
+
+This project was created as part of **academic coursework**.
+
+Licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more information.
