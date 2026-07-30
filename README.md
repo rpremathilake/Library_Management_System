@@ -90,12 +90,10 @@ The application runs entirely through the command line with simple prompts and m
 
 ## 👨‍💻 Author
 
-**Bhagya Premathilake**
-
-Software Engineering Undergraduate
-
-* GitHub:  `[rpremathilake](https://github.com/rpremathilakeO)`
-* LinkedIn: `[Bhagya Premathilaka](https://www.linkedin.com/in/bhagya-premathilaka-485bab269/)`
-* Email: `bspremathilaka@gmail.com`
+**Name:** Bhagya Premathilake  
+**Role:** Software Engineering Undergraduate  
+**GitHub:** [rpremathilake](https://github.com/rpremathilakeO)
+**LinkedIn:** [Bhagya Premathilaka](https://www.linkedin.com/in/bhagya-premathilaka-485bab269/)  
+**Email:** bspremathilaka@gmail.com 
 
 ---
