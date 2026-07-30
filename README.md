@@ -24,26 +24,33 @@ The system allows a university library to manage different types of educational 
 4. [Usage](#usage)  
 5. [Technologies Used](#technologies-used)  
 6. [Future Improvements](#future-improvements)  
-7. [Author](#author)  
-8. [License](#license)  
+7. [Author](#author)   
 
 ## Overview
 
-This project is a **command-line Python program** designed to manage a university library’s resources. The system supports four types of resources: **Books, Magazines, Educational DVDs, and Lecture CDs**.
+This project is a command-line Python application designed to manage resources in a university library.
 
-The program allows users to add, remove, view, lend, and update resources with details such as subject, format, rental price, and availability.
+The system supports four types of resources:
+
+📖 Books
+📰 Magazines
+💿 Educational DVDs
+💿 Lecture CDs
+
+The application allows library staff to add, remove, view, search, lend, and return resources while tracking the number of available copies.
+
+The project is developed using Object-Oriented Programming (OOP) concepts such as inheritance, abstraction, encapsulation, and polymorphism.
 
 ---
 
 ## Library Resources
 
-| Resource Type    | Attributes                                                                                     | Example                                                                                      | Available Subjects/Formats                                    |
-|------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| **Book**         | ISBN number, title, format, subject, rental price per day, number of copies                    | `[ISBN1234, The Solar System, Hardcover, Science, 15.00, 5]`                                 | Formats: Hardcover, Paperback<br>Subjects: Science, History, Literature |
-| **Magazine**     | Magazine number, title, color or black & white print, subject, rental price per day, copies   | `[01, History of Cricket, color, Sports, 5.00, 7]`                                           | Subjects: Science, Technology, Sports                         |
-| **Educational DVD** | DVD number, title, subject, rental price per day, number of copies                            | `[10, Birth of the Solar System, Astronomy, 2.50, 10]`                                       | Subjects: Astronomy, Math, Technology                         |
-| **Lecture CD**   | CD number, title, subject, rental price per day, number of copies                              | `[21, Basics of Western Music, Music, 1.50, 11]`                                             | Subjects: Music, Math, Foreign Languages                      |
-
+Resource Type	Attributes	Example	Available Subjects / Formats
+📖 Book	ISBN, title, format, subject, rental price per day, number of copies	[ISBN1234, The Solar System, Hardcover, Science, 15.00, 5]	Formats: Hardcover, Paperback
+Subjects: Science, History, Literature
+📰 Magazine	Magazine number, title, print type, subject, rental price per day, number of copies	[01, History of Cricket, Color, Sports, 5.00, 7]	Subjects: Science, Technology, Sports
+💿 Educational DVD	DVD number, title, subject, rental price per day, number of copies	[10, Birth of the Solar System, Astronomy, 2.50, 10]	Subjects: Astronomy, Math, Technology
+💿 Lecture CD	CD number, title, subject, rental price per day, number of copies	[21, Basics of Western Music, Music, 1.50, 11]	Subjects: Music, Math, Foreign Languages
 ---
 
 ## Features
