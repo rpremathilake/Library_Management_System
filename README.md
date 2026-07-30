@@ -39,10 +39,10 @@ This project was developed using **Object-Oriented Programming (OOP)** principle
 
 | Resource Type          | Main Attributes                                                       | Available Subjects / Formats                                            |
 | ---------------------- | --------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 📖 **Book**            | ISBN, title, format, subject, rental price/day, copies                | Formats: Hardcover, Paperback<br>Subjects: Science, History, Literature |
-| 📰 **Magazine**        | Magazine number, title, print type, subject, rental price/day, copies | Subjects: Science, Technology, Sports                                   |
-| 💿 **Educational DVD** | DVD number, title, subject, rental price/day, copies                  | Subjects: Astronomy, Math, Technology                                   |
-| 💿 **Lecture CD**      | CD number, title, subject, rental price/day, copies                   | Subjects: Music, Math, Foreign Languages                                |
+| 📖 **Book**            | ISBN, title, format, subject, rental price per day, copies                | Formats: Hardcover, Paperback<br>Subjects: Science, History, Literature |
+| 📰 **Magazine**        | Magazine number, title, print type, subject, rental price per day, copies | Subjects: Science, Technology, Sports                                   |
+| 💿 **Educational DVD** | DVD number, title, subject, rental price per day, copies                  | Subjects: Astronomy, Math, Technology                                   |
+| 💿 **Lecture CD**      | CD number, title, subject, rental price per day, copies                   | Subjects: Music, Math, Foreign Languages                                |
 
 ---
 
@@ -94,16 +94,8 @@ The application runs entirely through the command line with simple prompts and m
 
 Software Engineering Undergraduate
 
-* GitHub: `YOUR-GITHUB-USERNAME`
-* LinkedIn: `YOUR-LINKEDIN-USERNAME`
-* Email: `YOUR-EMAIL@example.com`
+* GitHub:  `[rpremathilake](https://github.com/rpremathilakeO)`
+* LinkedIn: `[Bhagya Premathilaka](https://www.linkedin.com/in/bhagya-premathilaka-485bab269/)`
+* Email: `bspremathilaka@gmail.com`
 
 ---
-
-## 📄 License
-
-This project was created as part of **academic coursework**.
-
-Licensed under the **MIT License**.
-
-See the [LICENSE](LICENSE) file for more information.
